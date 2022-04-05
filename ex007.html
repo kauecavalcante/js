@@ -19,8 +19,19 @@
    <input type="button" value="Somar" onclick="somar()">
    <div id="res"> Resultado</div>
 
+   <hr>
+
+   <h1>Diminuindo valores</h1>
+   <input type="number" name="bla1" id="bla1"> -
+   <input type="number" name="bla2" id="bla2">
+   <input type="button" value="diminuir" onclick="diminuir()">
+   <div id="ress">Resultado</div>
+
+
+
 
    <script>
+
        function somar() {
            var tn1 = window.document.getElementById('txtn1')
            var tn2 = window.document.getElementById('txtn2')
@@ -30,6 +41,16 @@
            var s = n1 + n2
            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
        }
+
+       function diminuir() {
+           var n3 = window.document.getElementById('bla1')
+           var n4 = window.document.getElementById('bla2')
+           var n5 = Number(n3.value)
+           var n6 = Number(n4.value) 
+           var t = n5 - n6 
+           ress.innerHTML = `A subtração entre ${n5} e ${n6} é igual a <strong>${t}</strong>`
+       }
+
    </script>
 </body>
 </html>
