@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imigrante</title>
+</head>
+<body>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function clicar() {
+        var pais = window.document.getElementById('txtp')
+        var res = window.document.getElementById('res')
+        //var p = Text(pais)
+        res.innerHTML = `seu pais é <strong>${pais.value}</strong> `
+        if (pais.value == 'brasil') {
+            res.innerHTML += `você é <strong>brasileiro</strong>`
+        } else {
+            
+            res.innerHTML += ` você é <strong>estrangeiro</strong> `
+        }
+        }
+
+    </script>
+</body>
+</html>
