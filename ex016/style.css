@@ -22,3 +22,14 @@ footer{
   text-align: center;
   font-style: italic;
 }
+
+div {
+  text-align: center;
+  padding: 8px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+
+}
