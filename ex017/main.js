@@ -25,6 +25,9 @@ function verificar() {
             } else {
                 //idoso
                 img.setAttribute('src', 'https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+            } if (idade > 100) {
+                //caixão
+                img.setAttribute('src', 'http://s2.glbimg.com/Pv4NPWNe_kR4cWt6K56orQ-6L9I=/290x386/s2.glbimg.com/p5tfKCkBXc5FWdDR_mj3Gx95Zx8=/s.glbimg.com/jo/g1/f/original/2015/03/15/caixao_interna2.jpg')
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher'
@@ -40,6 +43,9 @@ function verificar() {
             } else {
                 //idoso
                 img.setAttribute('src', 'https://images.pexels.com/photos/2050994/pexels-photo-2050994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+            } if (idade > 100) {
+                //caixão
+                img.setAttribute('src', 'http://s2.glbimg.com/Pv4NPWNe_kR4cWt6K56orQ-6L9I=/290x386/s2.glbimg.com/p5tfKCkBXc5FWdDR_mj3Gx95Zx8=/s.glbimg.com/jo/g1/f/original/2015/03/15/caixao_interna2.jpg')
             }
         }
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
